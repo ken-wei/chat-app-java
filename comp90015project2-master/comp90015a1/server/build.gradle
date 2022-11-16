@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+version '0.0.1'
+sourceCompatibility = 11.1
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':base')
+    // https://mvnrepository.com/artifact/args4j/args4j
+    implementation 'args4j:args4j:2.33'
+    // https://mvnrepository.com/artifact/com.beust/jcommander
+    implementation 'com.beust:jcommander:1.81'
+
+}
+
+test {
+    useJUnitPlatform()
+}
